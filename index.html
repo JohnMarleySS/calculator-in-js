@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator in JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            
+            <div>
+                <input id="viewer" type="text">
+            </div>
+
+            <div class="buttons">
+                <div>
+                    <button class="blackColor" onclick="numero('(')">(</button>
+                    <button class="blackColor" onclick="numero(')')">)</button>
+                    <button class="blackColor" onclick="numero('%')">%</button>
+                    <button class="blackColor"  onclick="limpar()">CE</button>
+                </div>
+                <div>
+                    <button class="whiteColor" onclick="numero(7)">7</button>
+                    <button class="whiteColor" onclick="numero(8)">8</button>
+                    <button class="whiteColor" onclick="numero(9)">9</button>
+                    <button class="blackColor" onclick="numero('/')">/</button>
+                </div>
+                <div>
+                    <button class="whiteColor" onclick="numero(4)">4</button>
+                    <button class="whiteColor" onclick="numero(5)">5</button>
+                    <button class="whiteColor" onclick="numero(6)">6</button>
+                    <button class="blackColor" onclick="numero('*')">x</button>
+                </div>
+                <div>
+                    <button class="whiteColor" onclick="numero(1)">1</button>
+                    <button class="whiteColor" onclick="numero(2)">2</button>
+                    <button class="whiteColor" onclick="numero(3)">3</button>
+                    <button class="blackColor" value="-" onclick="numero('-')">-</button>
+                </div>
+                <div>
+                    <button class="whiteColor" onclick="numero(0)">0</button>
+                    <button class="whiteColor" onclick="numero('.')">.</button>
+                    <button class="whiteColor" onclick="calcular()">=</button>
+                    <button class="blackColor" onclick="numero('+')">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
